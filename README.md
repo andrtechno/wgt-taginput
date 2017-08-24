@@ -32,7 +32,7 @@ Once the extension is installed, simply use it in your code by :
 ```php
 <?php
         $form->field($model, 'text')->widget(TagInput::className(), [
-            'options' => ['rows' => 6],
+            'options' => [],
         ]);
  ?>
 ```
