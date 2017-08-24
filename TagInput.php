@@ -7,17 +7,14 @@
  * @link http://www.corner-cms.com/
  */
 
-namespace panix\ext\teginput;
+namespace panix\ext\taginput;
 
 use Yii;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
 
-class TinyMce extends InputWidget {
-
-    public $options = [];
-    public $defaultOptions = [];
+class TagInput extends InputWidget {
 
     public function run() {
         if ($this->hasModel()) {
@@ -31,8 +28,8 @@ class TinyMce extends InputWidget {
     protected function registerClientScript() {
         $view = $this->getView();
         Asset::register($view);
-        $options = Json::encode(\yii\helpers\ArrayHelper::merge($this->defaultOptions, $this->options));
-        $js[] = "$('#{$this->id}').tagEditor({$options});";
+        $options = Json::encode($this->options);
+        $js[] = "$('#{$this->options['id']}').tagEditor({$options});";
         $view->registerJs(implode("\n", $js));
     }
 

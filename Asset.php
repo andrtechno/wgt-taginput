@@ -12,7 +12,7 @@ namespace panix\ext\taginput;
 
 use yii\web\AssetBundle;
 
-class TinyMceLangAsset extends AssetBundle {
+class Asset extends AssetBundle {
 
     public $sourcePath = '@vendor/panix/wgt-taginput/assets';
     
@@ -22,7 +22,7 @@ class TinyMceLangAsset extends AssetBundle {
         YII_ENV_DEV ? 'js/jquery.tag-editor.js' : 'js/jquery.tag-editor.min.js',
     ];
     public $depends = [
-        'panix\ext\taginput\Asset'
+        'yii\jui\JuiAsset',
     ];
 
 }
