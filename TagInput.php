@@ -16,6 +16,8 @@ use yii\widgets\InputWidget;
 
 class TagInput extends InputWidget {
 
+    public $placeholder;
+
     public function run() {
         if ($this->hasModel()) {
             echo Html::activeTextInput($this->model, $this->attribute, $this->options);
@@ -28,6 +30,10 @@ class TagInput extends InputWidget {
     protected function registerClientScript() {
         $view = $this->getView();
         Asset::register($view);
+
+        if ($this->placeholder)
+            $this->options['placeholder'] = $this->placeholder;
+
         $options = Json::encode($this->options);
         $js[] = "$('#{$this->options['id']}').tagEditor({$options});";
         $view->registerJs(implode("\n", $js));

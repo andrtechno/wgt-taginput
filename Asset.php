@@ -20,6 +20,7 @@ class Asset extends AssetBundle {
     
     public $js = [
         YII_ENV_DEV ? 'js/jquery.tag-editor.js' : 'js/jquery.tag-editor.min.js',
+        'js/jquery.caret.min.js'
     ];
     public $depends = [
         'yii\jui\JuiAsset',
