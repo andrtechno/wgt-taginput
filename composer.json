@@ -3,7 +3,7 @@
     "description": "Widget taginput",
     "keywords": ["corner-cms", "extension", "widget", "form", "taginput"],
     "homepage": "https://github.com/andrtechno/wgt-taginput",
-    "type": "yii2-extension",
+    "type": "extension",
     "license": "BSD 3-Clause",
     "authors": [
         {
