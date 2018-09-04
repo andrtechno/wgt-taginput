@@ -1,15 +1,15 @@
 {
     "name": "panix/wgt-taginput",
     "description": "Widget taginput",
-    "keywords": ["corner-cms", "extension", "widget", "form", "taginput"],
+    "keywords": ["pixelion-cms", "extension", "widget", "form", "taginput"],
     "homepage": "https://github.com/andrtechno/wgt-taginput",
     "type": "extension",
     "license": "BSD 3-Clause",
     "authors": [
         {
-            "name": "CORNER CMS",
-            "email": "dev@corner-cms.com",
-            "homepage": "http://www.corner-cms.com/"
+            "name": "PIXELION CMS",
+            "email": "dev@pixelion.com.ua",
+            "homepage": "https://pixelion.com.ua"
         }
     ],
     "require": {
