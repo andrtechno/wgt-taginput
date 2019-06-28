@@ -1,17 +1,15 @@
 <?php
 
-/**
- *
- * @author PIXELION CMS development team <dev@pixelion.com.ua>
- * @link http://pixelion.com.ua PIXELION CMS
- */
-
 namespace panix\ext\taginput;
 
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
 
+/**
+ * Class TagInput
+ * @package panix\ext\taginput
+ */
 class TagInput extends InputWidget {
 
     public $placeholder;
