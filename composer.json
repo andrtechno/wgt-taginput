@@ -3,7 +3,7 @@
     "description": "Widget taginput",
     "keywords": ["pixelion-cms", "extension", "widget", "form", "taginput"],
     "homepage": "https://github.com/andrtechno/wgt-taginput",
-    "type": "yii2-extension",
+    "type": "pixelion-component",
     "license": "MIT",
     "authors": [
         {
