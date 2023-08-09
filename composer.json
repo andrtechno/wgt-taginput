@@ -12,9 +12,6 @@
             "homepage": "https://pixelion.com.ua"
         }
     ],
-    "require": {
-        "panix/engine": "*"
-    },
     "autoload": {
         "psr-4": {
             "panix\\ext\\taginput\\": ""
