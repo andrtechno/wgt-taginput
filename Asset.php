@@ -23,7 +23,7 @@ class Asset extends AssetBundle {
         'js/jquery.caret.min.js'
     ];
     public $depends = [
-        //'yii\jui\JuiAsset',
+        'yii\web\JqueryAsset',
     ];
 
 }
